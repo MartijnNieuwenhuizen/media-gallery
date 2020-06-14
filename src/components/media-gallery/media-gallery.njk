@@ -1,0 +1,7 @@
+<small>{{ amountOfItems }}</small>
+
+<ul>
+  {% for item in items %}
+    {%- component item.componentName, item.componentData -%}
+  {% endfor %}
+</ul>

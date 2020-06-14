@@ -1,7 +1,10 @@
 {% extends '../layout/default.njk' %}
 
 {% block body %}
+  {%- component 'page-heading' -%}
   <main>
-    <h1>Hello!</h1>
+    {%- component 'heading' -%}
+
+    {%- component 'media-gallery' -%}
   </main>
 {% endblock %}

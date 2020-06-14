@@ -1,0 +1,15 @@
+<figure class="video">
+  <video class="video__src" controls="controls">
+    {% if mp4Src %}
+      <source src="{{ mp4Src }}" type="video/mp4">
+    {% endif %}
+
+    {% if mp4Src %}
+      <source src="{{ webmSrc }}" type="video/webm">
+    {% endif %}
+
+    <p class="video__no-support-text">{{ fallbackText }}</p>
+  </video>
+
+  <figcaption class="video__caption">{{ caption }}</figcaption>
+</figure>

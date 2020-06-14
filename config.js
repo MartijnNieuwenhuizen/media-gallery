@@ -123,7 +123,7 @@ module.exports = {
 
   img: {
     src: {
-      all: `${base.src}/static/img/**/*.{svg,png,jpg,gif,webp}`
+      all: `${base.src}/static/img/**/*.{svg,png,jpg,jpeg,gif,webp}`
     },
     dist: {
       base: `${base.dist}/static/img`

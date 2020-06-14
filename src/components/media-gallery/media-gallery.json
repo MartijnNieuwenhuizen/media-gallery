@@ -1,0 +1,69 @@
+{
+  "amountOfItems": "24",
+  "items": [
+    {
+      "componentName": "image",
+      "componentData": {
+        "src": "/static/img/attempt-one.jpeg",
+        "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
+        "caption": "My first attempt of baking a bread"
+      }
+    },
+    {
+      "componentName": "video",
+      "componentData": {
+        "mp4Src": "/static/video/kneeding-one.mp4",
+        "webmSrc": "",
+        "caption": "A attempt of kneed and fold"
+      }
+    },
+    {
+      "componentName": "image",
+      "componentData": {
+        "src": "/static/img/scored-bread.jpeg",
+        "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
+        "caption": "My first attempt of baking a bread"
+      }
+    },
+    {
+      "componentName": "image",
+      "componentData": {
+        "src": "/static/img/foccacia.jpeg",
+        "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
+        "caption": "My first attempt of baking a bread"
+      }
+    },
+    {
+      "componentName": "video",
+      "componentData": {
+        "mp4Src": "/static/video/kneeding-two.mp4",
+        "webmSrc": "",
+        "caption": "A attempt of kneed and fold"
+      }
+    },
+    {
+      "componentName": "image",
+      "componentData": {
+        "src": "/static/img/attempt-four.jpeg",
+        "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
+        "caption": "My first attempt of baking a bread"
+      }
+    },
+    {
+      "componentName": "video",
+      "componentData": {
+        "mp4Src": "/static/video/let-the-machine-do-the-work.mp4",
+        "webmSrc": "",
+        "caption": "A attempt of kneed and fold"
+      }
+    },
+    {
+      "componentName": "video",
+      "componentData": {
+        "mp4Src": "/static/video/oven-rise.mov",
+        "webmSrc": "",
+        "caption": "A attempt of kneed and fold"
+      }
+    }
+  ]
+}
