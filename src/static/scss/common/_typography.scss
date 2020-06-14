@@ -1,10 +1,17 @@
-// @font-face {
-//   font-family: 'Trixie';
-//   src: url('/static/fonts/trixie-text-webfont.woff2') format('woff2'),
-//     url('/static/fonts/trixie-text-webfont.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/static/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('/static/fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair-Display';
+  src: url('/static/fonts/playfairdisplay-regular-webfont.woff') format('woff2'),
+    url('/static/fonts/playfairdisplay-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $base-font-size: 1rem;
 
@@ -17,8 +24,8 @@ $heading-l: 3.157rem;
 $heading-m: 2.369rem;
 $heading-s: 1.777rem;
 
-$font-family-primary: sans-serif;
-$font-family-secondary: serif;
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Playfair-Display', serif;
 
 body {
   font-family: $font-family-primary;

@@ -32,6 +32,12 @@ $avoid-touching-the-browser-edge: $spacing-m;
   margin-right: auto;
   @include avoid-touching-the-browser-edge;
 }
+.constrain-l {
+  max-width: $constrain-l;
+  margin-left: auto;
+  margin-right: auto;
+  @include avoid-touching-the-browser-edge;
+}
 .constrain-m {
   max-width: $constrain-m;
   margin-left: auto;
