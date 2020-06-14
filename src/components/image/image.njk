@@ -1,13 +1,15 @@
-<div>
-  <button type="button">
+<div class="image">
+  <button class="image__trigger" type="button">
     <span class="screenreader">{{ screenReaderText }}</span>
     {%- component 'icons/open' -%}
   </button>
 
-  <figure class="image">
+  <figure class="image__figure">
     <img class="image__img" src="{{ src }}" alt="{{ alt }}">
     <figcaption class="image__caption">{{ caption }}</figcaption>
   </figure>
 
-  {%- component 'download' -%}
+  <div class="image__download">
+    {%- component 'download', download -%}
+  </div>
 </div>

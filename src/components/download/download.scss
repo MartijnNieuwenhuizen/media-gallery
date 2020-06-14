@@ -1,2 +1,37 @@
+@keyframes download {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+}
+
 .download {
+  display: inline-flex;
+  align-items: center;
+
+  margin: $spacing-m;
+  text-decoration: none;
+  font-weight: normal;
+  box-shadow: 0 3px $color-primary;
+
+  transition: $quick $ease-out box-shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px $color-primary;
+
+    .download__icon {
+      animation: download 1s $ease-in-out infinite;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 $spacing-s 0 0;
+  }
 }

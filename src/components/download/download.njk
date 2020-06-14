@@ -1,1 +1,8 @@
-<a href="{{ href }}" download="download">{{ label }}</a>
+<a class="download" href="{{ href }}" download="{{ fileName }}">
+  <span class="download__icon">
+    {%- component 'icons/download' -%}
+  </span>
+
+  {{ label }}
+  <span class="screenreader">{{ screenReaderLabel }}</span>
+</a>

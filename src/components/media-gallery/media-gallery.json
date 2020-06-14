@@ -7,7 +7,11 @@
       "componentData": {
         "src": "/static/img/attempt-one.jpeg",
         "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
-        "caption": "My first attempt of baking a bread"
+        "caption": "My first attempt of baking a bread",
+        "download": {
+          "href": "/static/img/attempt-one.jpeg",
+          "fileName": "attempt-one.jpeg"
+        }
       }
     },
     {
@@ -23,7 +27,11 @@
       "componentData": {
         "src": "/static/img/scored-bread.jpeg",
         "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
-        "caption": "My first attempt of baking a bread"
+        "caption": "My first attempt of baking a bread",
+        "download": {
+          "href": "/static/img/scored-bread.jpeg",
+          "fileName": "scored-bread.jpeg"
+        }
       }
     },
     {
@@ -32,7 +40,11 @@
       "componentData": {
         "src": "/static/img/foccacia.jpeg",
         "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
-        "caption": "My first attempt of baking a bread"
+        "caption": "My first attempt of baking a bread",
+        "download": {
+          "href": "/static/img/foccacia.jpeg",
+          "fileName": "foccacia.jpeg"
+        }
       }
     },
     {
@@ -48,7 +60,11 @@
       "componentData": {
         "src": "/static/img/attempt-four.jpeg",
         "alt": "Image of my first attempt of a bread. You will see a nice brown crust on it!",
-        "caption": "My first attempt of baking a bread"
+        "caption": "My first attempt of baking a bread",
+        "download": {
+          "href": "/static/img/attempt-four.jpeg",
+          "fileName": "attempt-four.jpeg"
+        }
       }
     },
     {
