@@ -32,15 +32,30 @@ export default class Lightbox {
   }
 
   /**
+   * Autoplay video and add controls for user interaction
+   * @param {HTMLVideoElement} videoElement
+   */
+  static _handleVideo(videoElement) {
+    videoElement.play()
+    videoElement.setAttribute('controls', 'controls')
+  }
+
+  /**
    * Set received HTML into the lightbox inner element and make the lightbox visible
    * @param {String} htmlElement
    */
   open(htmlElement) {
     this._target.innerHTML = htmlElement
     this._element.classList.add('lightbox--visible')
+
+    const video = this._target.querySelector('video')
+    if (video) {
+      Lightbox._handleVideo(video)
+    }
   }
 
   close() {
     this._element.classList.remove('lightbox--visible')
+    this._target.innerHTML = ''
   }
 }
