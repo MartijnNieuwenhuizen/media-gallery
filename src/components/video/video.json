@@ -6,5 +6,6 @@
     "duration": "2 min",
     "size": "12 MB"
   },
-  "fallbackText": "Video's are not supported in your browser"
+  "fallbackText": "Video's are not supported in your browser",
+  "screenReaderText": "play video in larger view"
 }

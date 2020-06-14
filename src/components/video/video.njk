@@ -1,6 +1,11 @@
 <div>
+  <button type="button">
+    <span class="screenreader">{{ screenReaderText }}</span>
+    {%- component 'icons/play' -%}
+  </button>
+
   <figure class="video">
-    <video class="video__src" controls="controls">
+    <video class="video__src">
       {% if mp4Src %}
         <source src="{{ mp4Src }}" type="video/mp4">
       {% endif %}

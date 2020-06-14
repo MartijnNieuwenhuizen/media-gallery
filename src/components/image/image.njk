@@ -1,4 +1,9 @@
 <div>
+  <button type="button">
+    <span class="screenreader">{{ screenReaderText }}</span>
+    {%- component 'icons/open' -%}
+  </button>
+
   <figure class="image">
     <img class="image__img" src="{{ src }}" alt="{{ alt }}">
     <figcaption class="image__caption">{{ caption }}</figcaption>
