@@ -11,6 +11,7 @@ import { img, imgWatch } from './tasks/img'
 import { css, cssWatch, cssLint } from './tasks/css'
 import { docs, docsWatch } from './tasks/docs'
 import { fonts, fontsWatch } from './tasks/fonts'
+import { videos, videosWatch } from './tasks/video'
 import { js, jsLint, jsTest } from './tasks/js'
 import { mock, mockWatch } from './tasks/mock'
 import { fileUpload } from './tasks/upload'
@@ -20,13 +21,14 @@ import { zip } from './tasks/zip'
 function dev(cb) {
   return series(
     clean,
-    parallel(docs, html, img, css, fonts, mock),
+    parallel(docs, html, img, videos, css, fonts, mock),
     parallel(
       js,
       browserSync,
       docsWatch,
       htmlWatch,
       imgWatch,
+      videosWatch,
       cssWatch,
       fontsWatch,
       mockWatch
@@ -40,12 +42,16 @@ function dist(cb) {
   if (argv.includes('--static')) {
     return series(
       clean,
-      parallel(html, img, css, fonts, js),
+      parallel(html, img, css, fonts, videos, js),
       moveTemplatesToRoot
     )(cb)
   }
 
-  return series(clean, parallel(docs, html, img, css, fonts, mock, js), zip)(cb)
+  return series(
+    clean,
+    parallel(docs, html, img, css, fonts, videos, mock, js),
+    zip
+  )(cb)
 }
 
 function codequality(cb) {

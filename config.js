@@ -85,6 +85,15 @@ module.exports = {
     }
   },
 
+  videos: {
+    src: {
+      videos: `${base.src}/static/video/**/*`
+    },
+    dist: {
+      videos: `${base.dist}/static/video`
+    }
+  },
+
   mock: {
     src: {
       mock: `${base.src}/mock/**/*`

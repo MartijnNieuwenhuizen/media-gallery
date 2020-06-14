@@ -60,7 +60,7 @@
     {
       "componentName": "video",
       "componentData": {
-        "mp4Src": "/static/video/oven-rise.mov",
+        "mp4Src": "/static/video/oven-rise.mp4",
         "webmSrc": "",
         "caption": "A attempt of kneed and fold"
       }
