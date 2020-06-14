@@ -1,10 +1,10 @@
-<div>
-  <button type="button">
+<div class="video">
+  <button class="video__trigger" type="button">
     <span class="screenreader">{{ screenReaderText }}</span>
     {%- component 'icons/play' -%}
   </button>
 
-  <figure class="video">
+  <figure class="video__figure">
     <video class="video__src">
       {% if mp4Src %}
         <source src="{{ mp4Src }}" type="video/mp4">
@@ -26,5 +26,7 @@
     </figcaption>
   </figure>
 
-  {%- component 'download' -%}
+  <div class="video__download">
+    {%- component 'download' -%}
+  </div>
 </div>
