@@ -19,10 +19,9 @@ $font-size-l: 1.25rem;
 $font-size-m: $base-font-size;
 $font-size-s: 0.8rem;
 
-$heading-xl: 4.209rem;
-$heading-l: 3.157rem;
-$heading-m: 2.369rem;
-$heading-s: 1.777rem;
+$heading-xl: 3.157rem;
+$heading-l: 2.369rem;
+$heading-m: 1.777rem;
 
 $font-family-primary: 'Montserrat', sans-serif;
 $font-family-secondary: 'Playfair-Display', serif;
@@ -57,7 +56,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-size: $heading-s;
+  font-size: $heading-m;
   font-family: $font-family-secondary;
 }
 

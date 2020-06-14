@@ -2,12 +2,16 @@
   &__item-count {
   }
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   &__item {
     display: inline-block;
     max-width: 40rem;
   }
   &__item--highlight {
+    max-width: 60rem;
     border: 1px solid gold;
   }
 }
