@@ -36,6 +36,7 @@ h1,
   font-size: $heading-xl;
   font-family: $font-family-secondary;
   color: $color-secondary;
+  letter-spacing: 0.2rem;
 }
 h2,
 .h2 {
@@ -43,12 +44,14 @@ h2,
   margin-top: 0;
   font-family: $font-family-secondary;
   color: $color-secondary;
+  letter-spacing: 0.2rem;
 }
 h3,
 .h3 {
   font-size: $heading-m;
   font-family: $font-family-secondary;
   color: $color-secondary;
+  letter-spacing: 0.2rem;
 }
 h4,
 h5,

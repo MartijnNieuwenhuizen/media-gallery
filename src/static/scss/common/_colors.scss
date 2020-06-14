@@ -4,4 +4,5 @@ $gray: lightgray;
 $transparent-gray: rgba(lightgray, 0.6);
 
 $color-primary: #ffda75;
-$color-secondary: tomato;
+$color-primary-darker: darken($color-primary, 20%);
+$color-secondary: #7594ff;

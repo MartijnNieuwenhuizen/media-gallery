@@ -1,0 +1,18 @@
+.show-more {
+  padding: $spacing-m $spacing-l;
+  background-color: $color-primary;
+  border: none;
+  text-decoration: none;
+  font-family: $font-family-secondary;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+
+  transition: $quick $ease-out background-color, $quick $ease-out border-radius;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-darker;
+    border-radius: $border-radius-default;
+  }
+}
