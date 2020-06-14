@@ -2,6 +2,7 @@
   position: relative;
 
   &__figure {
+    position: relative;
     margin: 0;
     padding: 0;
   }
@@ -10,6 +11,7 @@
   }
 
   &__trigger {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,17 +28,17 @@
   }
 
   &__caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     max-width: 13rem;
-    font-size: $font-size-l;
-    background-color: $color-primary;
+    margin-left: auto;
     padding: $spacing-l $spacing-m;
+    margin-top: -1rem;
+    transform: translate(0, -1rem);
+
+    background-color: $color-primary;
+    font-size: $font-size-l;
 
     @media (min-width: $breakpoint-l) {
-      bottom: -1rem;
-      left: -1rem;
+      transform: translate(1rem, -1rem);
     }
   }
   &__caption-text {
@@ -45,8 +47,7 @@
   &__caption-meta {
     font-size: $font-size-m;
   }
-
-  &__wrapper {
-    // position: relative;
+  &__download {
+    text-align: right;
   }
 }
