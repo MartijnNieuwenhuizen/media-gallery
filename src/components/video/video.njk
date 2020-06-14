@@ -1,32 +1,34 @@
-<div class="video">
-  <button class="video__trigger" type="button">
+<div class="video" data-module="video/Video" data-trigger-selector="[data-element='trigger']" data-target-selector="[data-element='target']">
+  <button class="video__trigger" type="button" data-element="trigger">
     <span class="screenreader">{{ screenReaderText }}</span>
     {%- component 'icons/play' -%}
   </button>
 
-  <figure class="video__figure">
-    <video class="video__src">
-      {% if mp4Src %}
-        <source src="{{ mp4Src }}" type="video/mp4">
-      {% endif %}
+  <div data-element="target">
+    <figure class="video__figure">
+      <video class="video__src">
+        {% if mp4Src %}
+          <source src="{{ mp4Src }}" type="video/mp4">
+        {% endif %}
 
-      {% if mp4Src %}
-        <source src="{{ webmSrc }}" type="video/webm">
-      {% endif %}
+        {% if mp4Src %}
+          <source src="{{ webmSrc }}" type="video/webm">
+        {% endif %}
 
-      <p class="video__no-support-text">{{ fallbackText }}</p>
-    </video>
+        <p class="video__no-support-text">{{ fallbackText }}</p>
+      </video>
 
-    <figcaption class="video__caption">
-      <p class="video__caption-text">{{ caption }}</p>
+      <figcaption class="video__caption">
+        <p class="video__caption-text">{{ caption }}</p>
 
-      <div class="video__caption-meta">
-        {%- component 'meta', meta -%}
-      </div>
-    </figcaption>
-  </figure>
+        <div class="video__caption-meta">
+          {%- component 'meta', meta -%}
+        </div>
+      </figcaption>
+    </figure>
 
-  <div class="video__download">
-    {%- component 'download' -%}
+    <div class="video__download">
+      {%- component 'download' -%}
+    </div>
   </div>
 </div>

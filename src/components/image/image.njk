@@ -1,15 +1,17 @@
-<div class="image">
-  <button class="image__trigger" type="button">
+<div class="image" data-module="image/Image" data-trigger-selector="[data-element='trigger']" data-target-selector="[data-element='target']">
+  <button class="image__trigger" type="button" data-element="trigger">
     <span class="screenreader">{{ screenReaderText }}</span>
     {%- component 'icons/open' -%}
   </button>
 
-  <figure class="image__figure">
-    <img class="image__img" src="{{ src }}" alt="{{ alt }}">
-    <figcaption class="image__caption">{{ caption }}</figcaption>
-  </figure>
+  <div data-element="target">
+    <figure class="image__figure">
+      <img class="image__img" src="{{ src }}" alt="{{ alt }}">
+      <figcaption class="image__caption">{{ caption }}</figcaption>
+    </figure>
 
-  <div class="image__download">
-    {%- component 'download', download -%}
+    <div class="image__download">
+      {%- component 'download', download -%}
+    </div>
   </div>
 </div>
