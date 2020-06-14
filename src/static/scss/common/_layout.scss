@@ -1,0 +1,62 @@
+// Constrain list
+$constrain-xl: 80rem;
+$constrain-l: 65rem;
+$constrain-m: 50rem;
+$constrain-s: 43rem;
+
+// Spacing list
+$spacing-xxxl: 10rem;
+$spacing-xxl: 6rem;
+$spacing-xl: 2.3rem;
+$spacing-l: 1.5rem;
+$spacing-m: 1rem;
+$spacing-s: 0.5rem;
+$spacing-xs: 0.3rem;
+$spacing-xxs: 0.12rem;
+
+// Spacing meaning
+$avoid-touching-the-browser-edge: $spacing-m;
+@mixin avoid-touching-the-browser-edge {
+  padding-left: $avoid-touching-the-browser-edge;
+  padding-right: $avoid-touching-the-browser-edge;
+
+  @media (min-width: $breakpoint-m) {
+    padding-left: $spacing-xxl;
+    padding-right: $spacing-xxl;
+  }
+}
+
+// Constraints: Horizontal boundaries
+.constrain-max {
+  margin-left: auto;
+  margin-right: auto;
+  @include avoid-touching-the-browser-edge;
+}
+.constrain-m {
+  max-width: $constrain-m;
+  margin-left: auto;
+  margin-right: auto;
+  @include avoid-touching-the-browser-edge;
+}
+.constrain-s {
+  max-width: $constrain-s;
+  margin-left: auto;
+  margin-right: auto;
+  @include avoid-touching-the-browser-edge;
+}
+
+// Items
+.page-item {
+  margin-top: $spacing-xxxl;
+  margin-bottom: $spacing-xxxl;
+}
+
+.section-item {
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+}
+
+.content-item {
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
