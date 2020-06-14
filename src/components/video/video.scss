@@ -8,23 +8,50 @@
   }
   &__src {
     width: 100%;
+    transition: $quick $ease-in-out border-radius;
   }
 
   &__trigger {
     z-index: 1;
+    cursor: pointer;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6rem;
-    height: 6rem;
-    padding: $spacing-m $spacing-m $spacing-m $spacing-l;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     margin: 0;
+    background-color: transparent;
+    border: none;
+
+    &:focus,
+    &:hover {
+      .video__trigger-inner {
+        transform: scale(1) translateY(-50%);
+      }
+
+      + .video__container .video__src {
+        border-radius: 1rem;
+      }
+    }
+  }
+  &__trigger-inner {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0;
+    padding: $spacing-m $spacing-m $spacing-m $spacing-l;
 
     border: 4px solid $white;
     border-radius: 50%;
     background-color: transparent;
     color: $white;
+
+    transform: scale(0) translateY(-100%);
+    transition: $quick $ease-in-out transform;
   }
 
   &__caption {

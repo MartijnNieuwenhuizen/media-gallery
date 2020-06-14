@@ -1,3 +1,6 @@
+// This class should move to a util and be used by the image and video component
+// This setup is not ready for it, therefore it's duplicated
+
 import observer from '../../static/js/utils/observer'
 
 export default class Image {

@@ -6,7 +6,7 @@ $constrain-s: 43rem;
 
 // Spacing list
 $spacing-xxxl: 10rem;
-$spacing-xxl: 6rem;
+$spacing-xxl: 7rem;
 $spacing-xl: 2.3rem;
 $spacing-l: 1.5rem;
 $spacing-m: 1rem;
@@ -53,16 +53,16 @@ $avoid-touching-the-browser-edge: $spacing-m;
 
 // Items
 .page-item {
-  margin-top: $spacing-xxxl;
-  margin-bottom: $spacing-xxxl;
-}
-
-.section-item {
   margin-top: $spacing-xxl;
   margin-bottom: $spacing-xxl;
 }
 
-.content-item {
+.section-item {
   margin-top: $spacing-xl;
   margin-bottom: $spacing-xl;
+}
+
+.content-item {
+  margin-top: $spacing-l;
+  margin-bottom: $spacing-l;
 }

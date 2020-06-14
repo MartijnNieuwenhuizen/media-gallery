@@ -1,10 +1,12 @@
 <div class="video" data-module="video/Video" data-trigger-selector="[data-element='trigger']" data-target-selector="[data-element='target']">
   <button class="video__trigger" type="button" data-element="trigger">
-    <span class="screenreader">{{ screenReaderText }}</span>
-    {%- component 'icons/play' -%}
+    <div class="video__trigger-inner">
+      <span class="screenreader">{{ screenReaderText }}</span>
+      {%- component 'icons/play' -%}
+    </div>
   </button>
 
-  <div data-element="target">
+  <div class="video__container" data-element="target">
     <figure class="video__figure">
       <video class="video__src">
         {% if mp4Src %}
