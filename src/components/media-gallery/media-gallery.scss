@@ -1,2 +1,13 @@
 .media-gallery {
+  &__item-count {
+  }
+  &__list {
+  }
+  &__item {
+    display: inline-block;
+    max-width: 40rem;
+  }
+  &__item--highlight {
+    border: 1px solid gold;
+  }
 }

@@ -2,6 +2,7 @@
   "amountOfItems": "24",
   "items": [
     {
+      "type": "highlight",
       "componentName": "image",
       "componentData": {
         "src": "/static/img/attempt-one.jpeg",
@@ -26,6 +27,7 @@
       }
     },
     {
+      "type": "highlight",
       "componentName": "image",
       "componentData": {
         "src": "/static/img/foccacia.jpeg",
@@ -50,6 +52,7 @@
       }
     },
     {
+      "type": "highlight",
       "componentName": "video",
       "componentData": {
         "mp4Src": "/static/video/let-the-machine-do-the-work.mp4",

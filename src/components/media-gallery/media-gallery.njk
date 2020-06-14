@@ -1,7 +1,14 @@
-<small>{{ amountOfItems }}</small>
+<small class="media-gallery__item-count">{{ amountOfItems }}</small>
 
-<ul>
+<ul class="media-gallery__list">
   {% for item in items %}
-    {%- component item.componentName, item.componentData -%}
+    {% set classes = {
+      'media-gallery__item': true,
+      'media-gallery__item--highlight': item.type === 'highlight'
+    } | classes %}
+
+    <li class="{{ classes }}">
+      {%- component item.componentName, item.componentData -%}
+    </li>
   {% endfor %}
 </ul>
