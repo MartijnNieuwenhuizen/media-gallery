@@ -2,5 +2,9 @@
   "mp4Src": "",
   "webmSrc": "",
   "caption": "",
+  "meta": {
+    "duration": "2 min",
+    "size": "12 MB"
+  },
   "fallbackText": "Video's are not supported in your browser"
 }
