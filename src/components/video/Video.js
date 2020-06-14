@@ -1,3 +1,5 @@
+import observer from '../../static/js/utils/observer'
+
 export default class Video {
   constructor(element, options) {
     this._element = element
@@ -6,6 +8,7 @@ export default class Video {
     this._handleClick = this._handleClick.bind(this)
 
     this._cacheHTMLElements()
+    this._connectObserver()
     this._addEventListeners()
   }
 
@@ -14,11 +17,15 @@ export default class Video {
     this._target = this._element.querySelector(this._options.targetSelector)
   }
 
+  _connectObserver() {
+    this._observer = observer()
+  }
+
   _addEventListeners() {
     this._trigger.addEventListener('click', this._handleClick)
   }
 
   _handleClick(event) {
-    // open video
+    this._observer.notify('HELLOOO')
   }
 }
