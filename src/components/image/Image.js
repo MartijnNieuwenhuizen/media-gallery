@@ -25,7 +25,7 @@ export default class Image {
     this._trigger.addEventListener('click', this._handleClick)
   }
 
-  _handleClick(event) {
-    this._observer.notify('HELLOOO')
+  _handleClick() {
+    this._observer.notify(this._target.innerHTML)
   }
 }
