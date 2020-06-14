@@ -1,5 +1,6 @@
 {
   "amountOfItems": "24",
+  "amountOfItemsText": "items in the gallery",
   "items": [
     {
       "type": "highlight",

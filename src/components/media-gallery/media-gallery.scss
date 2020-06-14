@@ -1,17 +1,35 @@
 .media-gallery {
   &__item-count {
+    max-width: $constrain-m;
+    display: block;
+    margin: 0 auto;
+    @include avoid-touching-the-browser-edge;
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
   }
+
   &__item {
+    max-width: 30rem;
     display: inline-block;
-    max-width: 40rem;
+    margin: $spacing-xl 0;
+
+    @media (min-width: $breakpoint-m) {
+      max-width: 20rem;
+      margin: $spacing-xl;
+    }
   }
   &__item--highlight {
-    max-width: 60rem;
-    border: 1px solid gold;
+    max-width: 50rem;
+    // border: 1px solid gold;
+
+    @media (min-width: $breakpoint-m) {
+      max-width: 30rem;
+    }
   }
 }

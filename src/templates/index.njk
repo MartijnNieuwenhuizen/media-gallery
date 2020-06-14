@@ -4,9 +4,14 @@
   <div class="constrain-m">
     {%- component 'page-heading' -%}
   </div>
-  <main>
-    {%- component 'heading' -%}
 
-    {%- component 'media-gallery' -%}
+  <main class="page-item">
+    <div class="constrain-m section-item">
+      {%- component 'heading' -%}
+    </div>
+
+    <div class="section-item">
+      {%- component 'media-gallery' -%}
+    </div>
   </main>
 {% endblock %}
