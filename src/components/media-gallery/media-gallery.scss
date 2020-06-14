@@ -15,21 +15,49 @@
   }
 
   &__item {
-    max-width: 30rem;
+    max-width: 80vmin;
     display: inline-block;
     margin: $spacing-xl 0;
 
+    img,
+    video {
+      width: 80vmin;
+      height: 80vmin;
+      object-fit: cover;
+    }
+
+    @media (min-width: $breakpoint-s) {
+      max-width: 30vmin;
+      img,
+      video {
+        width: 30vmin;
+        height: 30vmin;
+        object-fit: cover;
+      }
+    }
+
     @media (min-width: $breakpoint-m) {
-      max-width: 20rem;
       margin: $spacing-xl;
     }
   }
   &__item--highlight {
-    max-width: 50rem;
-    // border: 1px solid gold;
+    max-width: 100vmin;
 
-    @media (min-width: $breakpoint-m) {
-      max-width: 30rem;
+    img,
+    video {
+      width: 100vmin;
+      height: 100vmin;
+      object-fit: cover;
+    }
+
+    @media (min-width: $breakpoint-s) {
+      max-width: 50vmin;
+      img,
+      video {
+        width: 50vmin;
+        height: 50vmin;
+        object-fit: cover;
+      }
     }
   }
 }

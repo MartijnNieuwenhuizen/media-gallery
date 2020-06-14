@@ -13,9 +13,16 @@
 
   &__inner {
     position: relative;
-    max-width: 40vw;
     background-color: white;
-    padding: $spacing-m;
+    padding: 0 0 $spacing-m;
+
+    max-width: 70vmin;
+    img,
+    video {
+      width: 70vmin;
+      height: 70vmin;
+      object-fit: cover;
+    }
   }
 
   &__trigger {
@@ -23,7 +30,7 @@
     top: 0;
     right: 0;
     max-width: 8rem;
-    transform: translateX(120%);
+    transform: translate(40%, -40%);
 
     border: none;
     background-color: transparent;

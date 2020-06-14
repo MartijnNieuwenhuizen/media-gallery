@@ -36,6 +36,14 @@
       }
     },
     {
+      "componentName": "video",
+      "componentData": {
+        "mp4Src": "/static/video/kneeding-two.mp4",
+        "webmSrc": "",
+        "caption": "A attempt of kneed and fold"
+      }
+    },
+    {
       "type": "highlight",
       "componentName": "image",
       "componentData": {
@@ -46,14 +54,6 @@
           "href": "/static/img/foccacia.jpeg",
           "fileName": "foccacia.jpeg"
         }
-      }
-    },
-    {
-      "componentName": "video",
-      "componentData": {
-        "mp4Src": "/static/video/kneeding-two.mp4",
-        "webmSrc": "",
-        "caption": "A attempt of kneed and fold"
       }
     },
     {
