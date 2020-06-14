@@ -1,2 +1,10 @@
 .page-heading {
+  &__intro {
+    [lang='en'] & {
+      @supports (hyphens: auto) {
+        text-align: justify;
+        hyphens: auto;
+      }
+    }
+  }
 }
